@@ -4,51 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
     <title>Website Gus</title>
+
 </head>
 <body>
-    <div class="topPanel">
-        <h1 class="center">Student Bio</h1>
+    <div id="topheader" class="bottomMargin">
+        <div id="topPanel">
+            <section id="name">
+               <h2>Gus Valenzuela</h2>
+            </section>
+    
+            <section id="navwrap">
+                <div id="navabout" class="nav">About</div>
+                <div id="navportfolio" class="nav">Portfolio</div>
+                <div id="navcontact" class="nav">Contact</div>
+            </section>
+        </div>
     </div>
 
-    <div class="maincontainer clearfix">
-        <div class="row1">
-            <div class="introbox center vcenter">
-                <h2>gus<br>Valenzuela</h2>
-
-                <!--  Headshot  -->
-                <a href="https://www.bing.com"
-                    target="_blank">
-                        <img id="mugshot"
-                        class="center"
-                        src="https://placehold.it/200x200" 
-                        alt="placeholder image" ></a>
-            </div>
-
-            <div class="about vcenter">
-                <h2></h2>
-
-                <!--  "about me" paragraphs -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, earum numquam. Natus facere voluptatem eos ad similique error, eius perspiciatis saepe minus impedit illo distinctio, maxime nihil reprehenderit dolorem libero!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aliquam consectetur at? Odio quibusdam neque, nisi doloremque fugiat velit modi esse adipisci nihil officia ipsa nulla eligendi hic, quidem voluptatibus!</p>
-            </div>
-        
-
-            <div class="info center">            
-            <h2>Contact Info</h2>
-                <ul>
-                    <li>Email: <a href="mailto:gusrosales7@gmail.com">gusrosales7@gmail.com</a></li>
-                    <li>Github: <a href="https://github.com/gusvalenzuela">gusValenzuela</a></li>
-                    <li>Portfolio: <a href="portfoliopage.html">Coming Soon</a></li>
-                </ul>
-
+    <div id="maincontainer" class="bottomMargin">
+        <div class="contentwrap">
+            <header>
+                <h2 id="contentheader">About Me</h2>
+            </header>
+            <div class="bio">
+                <img src="assets/images/profilephoto.jpg" 
+                    alt="" 
+                    height="200px"
+                    width="200px"
+                    id="biophoto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusantium laboriosam officia autem libero adipisci consequuntur quos exercitationem sed illum et quam impedit voluptatem officiis aperiam, vero maiores cumque ipsam?</p>
+                <p>And in conclusion...</p>
             </div>
         </div>
     </div>
     
-    <footer>this is a footer</footer>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <footer class="clearfix">Copyright &copy;</footer>
 </body>
 
 
