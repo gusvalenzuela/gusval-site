@@ -4,56 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="style2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>G Valenzuela - Portfolio</title>
-
 </head>
+
 <body>
-    <div id="topheader" class="bottomMargin">
-        <div id="topPanel">
-            <section id="name">
-               <h2>Gus Valenzuela</h2>
-            </section>
-    
-            <section id="navwrap">
-                <div id="navabout" class="nav">
-                    <a href="index.html">About</a></div>
-                <div id="navportfolio" class="nav">
-                    <a href="portfolio.html">Portfolio</a></div>
-                <div id="navcontact" class="nav">
-                    <a href="contact.html">Contact</a></div>
-            </section>
-        </div>
-    </div>
+    <!-- Header that spans whole width -->
+    <div class="topheader bottomMargin">
+        
+        <!-- 960px panel for site name and navigation bar -->
+        <div class="topPanel">
+            <div class="name">
+                <h1>Gus Valenzuela</h1>               
+            </div> 
 
-    <div id="maincontainer">
-        <div class="contentwrap">
-            <header>
-                <h2 id="contentheader">Portfolio</h2>
-            </header>
-
-            <div id="projectswrap">
-                <div id="proj1" class="project">
-                    <img src="#" alt="Project One">
-                </div>
-                <div id="proj2" class="project">
-                    <img src="#" alt="Project Two">
-                </div>
-                <div id="proj3" class="project">
-                    <img src="#" alt="Project Two">
-                </div>
-                <div id="proj4" class="project">
-                    <img src="#" alt="Project Two">
-                </div>
-                <div id="proj5" class="project">
-                    <img src="#" alt="Project Two">
-                </div>
+            <div class="navwrap">
+                <a href="index.html" class="navBar"><div class="nav">
+                    About</div></a>
+                <a href="portfolio.html" class="navBar"><div class="nav">
+                    Portfolio</div></a>  
+                <a href="contact.html" class="navBar"><div class="nav">
+                    Contact</div></a>
             </div>
         </div>
     </div>
-    <footer class="clearfix footer">Copyright &copy;</footer>   
-    
-</body>
 
+    <!-- 960px container to house all content -->
+    <div class="maincontainer">
+        <h2 class="contentheader">Portfolio</h2>
+        <hr class="bottomMargin">
+
+        <!-- wrapping my content in box -->
+        <div class="contentwrap">
+            <div class="project">
+                <a href="https://scratch.mit.edu/projects/351865503" target="_blank">
+                <img src="./assets/images/scratchmouse-filter.jpg" alt="Feline Cheesy Game on Scratch"></a>
+                <div class="projname">
+                    "Feline Cheesy" Game
+                </div>
+            </div>
+            <div class="project">
+                <a href="https://gusvalenzuela.github.io/prework-about-me/" target="_blank">
+                <img src="./assets/images/technics-300.jpg" alt="Prework 'About Me' Page"></a>
+                <div class="projname">
+                    Prework Website
+                </div>
+            </div>
+            <div class="project">
+                <a href="#" >
+                <img src="./assets/images/abstract-300.jpg" alt="Picture of outer space"></a>
+                <div class="projname">
+                    COMING SOON!
+                </div>
+            </div>
+            <div class="project">
+                <a href="#" >
+                <img src="./assets/images/cats-300.jpg" alt="Picture of a cat"></a>
+                <div class="projname">
+                    COMING SOON!
+                </div>
+            </div>
+            <div class="project">
+                <a href="#" >
+                <img src="./assets/images/city-300.jpg" alt="Picture of city skyline"></a>
+                <div class="projname">
+                    COMING SOON!
+                </div>
+            </div>
+        </div>
+    </div> 
+    <footer class="clearfix footer">Copyright &copy;</footer>   
+</body>
 </html>
