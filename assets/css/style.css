@@ -114,6 +114,8 @@ a.navBar:hover {
     float: left;
     border: 2px white solid;
     margin-right: 15px;
+    height: 160px;
+    width: 220px;
 }
 
 .contentwrap {
