@@ -110,7 +110,7 @@ a.navBar:hover {
     padding-top: 5px;
 }
 
-#biophoto {
+.biophoto {
     float: left;
     border: 2px white solid;
     margin-right: 15px;
