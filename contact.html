@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <title>G Valenzuela - Contact Me</title>
 </head>
 
@@ -16,33 +16,37 @@
         <!-- 960px panel for site name and navigation bar -->
         <div class="topPanel">
             <div class="name">
-                <h1>Gus Valenzuela</h1>
+                <h1 class="navHeaderName">Gus Valenzuela</h1>
             </div> 
 
             <div class="navwrap">
-                <a href="index.html" class="navBar"><div class="nav">
+                <a href="./index.html" class="navBar"><div class="nav">
                     About</div></a>
-                <a href="portfolio.html" class="navBar"><div class="nav">
+                <a href="./portfolio.html" class="navBar"><div class="nav">
                     Portfolio</div></a>  
-                <a href="contact.html" class="navBar"><div class="nav">
+                <a href="./contact.html" class="navBar"><div class="nav">
                     Contact</div></a>
             </div>
         </div>
     </div>
 
-    <!-- 960px container to house all content -->
-    <div class="maincontainer">
-        <h2 class="contentheader">Contact</h2>
-        <hr class="bottomMargin">
+    <!-- div for adding bottom margin without breaking margins ¯\_(ツ)_/¯ -->
+    <div class="embee">
 
-        <!-- wrapping my content in box -->
-        <div class="contentwrap">
-            <form class="form">
-                Name<br><input type="text" class="form-input" name="fullname" placeholder="John Smith">
-                Email<br><input type="email" class="form-input" name="em-addy" placeholder="youremail@gmail.com">  
-                Message<br><textarea name="message" class="form-input" rows="10" cols="150"></textarea>
-            </form>
-            <button type="submit">Submit</button>
+        <!-- 960px container to house all content -->
+        <div class="container">
+            <h2 class="contentheader">Contact</h2>
+            <hr class="bottomMargin">
+
+            <!-- wrapping my content in box -->
+            <div class="contentwrap">
+                <form class="form">
+                    Name<br><input type="text" class="form-input" name="fullname" placeholder="John Smith">
+                    Email<br><input type="email" class="form-input" name="em-addy" placeholder="youremail@gmail.com">  
+                    Message<br><textarea name="message" class="form-input" rows="10" cols="150"></textarea>
+                </form>
+                <button type="submit">Submit</button>
+            </div>
         </div>
     </div>
     <footer class="footer clearfix">Copyright &copy;</footer>    

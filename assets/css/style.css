@@ -1,15 +1,15 @@
 html {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
     background-image: url(../images/diagmonds.png);
-    min-height: 100%;
     margin: 0;
-    position: relative;
     display: block;
+    min-height: 100%;
+    /* position: relative; */
     /* background-color: #4aaaa5; */
 }
 
@@ -19,8 +19,8 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: #ffffff;
     /* padding-top: 20px; */
 }
@@ -47,8 +47,16 @@ a.navBar:hover {
     background-color: #4aaaa5;
 }
 
+.navbar {
+    height: 100%;
+}
+
 .bottomMargin {
     margin-bottom: 25px;
+}
+
+.embee {
+    margin-bottom: 42px;
 }
 
 .topheader {
@@ -72,8 +80,8 @@ a.navBar:hover {
     float: left;
     color: #ffffff;
     background: #4aaaa5;
-    padding-top: 15px;
-    width: 30%;
+    padding: 2% 0 2% 0;
+    width: 40%;
 }
 
 .navwrap {
@@ -87,18 +95,20 @@ a.navBar:hover {
     /* background-color: darkgoldenrod; */
     /* border-right: 2px orange solid; */
     width: 100px;
-    padding: 25px 0px;
+    padding: 25px 0;
 }
 
-.maincontainer {
-    min-height: 100%;
+/* .navHeaderName {
+    font-
+} */
+
+.container {
     clear: both;
-    margin: auto;
     background-color: #ffffff;
     padding: 25px;
     width: 910px;
     overflow: auto;
-    margin-bottom: 75px;
+    margin: auto;
     /* border: 2px #dddddd solid; */
 }
 
@@ -118,16 +128,12 @@ a.navBar:hover {
     width: 220px;
 }
 
-.contentwrap {
-    clear: both;
-    float: left;
-}
-
 .project {
     float: left;   
-    margin: 0px 25px 25px 0px;
-    height: 220px;
-    width: 300px;    
+    margin: auto;
+    padding: 0% 2% 2% 0%;
+    height: 146px;
+    width: 200px;    
 }
 
 .projname {
@@ -171,7 +177,7 @@ button {
     margin: 0;
     text-decoration: none;
     background: #4aaaa5;
-    font-size: 1rem;
+    font-size: 1em;
     cursor: pointer;
     text-align: center;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -179,18 +185,16 @@ button {
 
 .footer {
     color: #ffffff;
-    position: fixed;
-    padding: 10px 0px;
-    left: 0;
+    /* position: fixed; */
+    padding: 16px 0px;
+    /* left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     background-color: #666666;
     width: 100%;
     margin: 0;
     overflow: hidden;
     border-top: 8px solid #4aaaa5;
-    /* float: inline-end; */    
-    /* text-align: right; */
 }
 
 /* .center {
@@ -203,3 +207,83 @@ button {
     display: block;
     clear: both;
 }
+
+/* Width at 992px and below */
+@media screen and (max-width: 992px) {
+    body {
+        background: red;
+        width: 100%;
+    }
+
+    .topheader {
+        padding: 0 2%;
+    }
+
+    .topPanel, .form-input, .form {
+        width: 96%;
+    }
+
+    .topPanel {
+        margin: 0;
+    }
+
+    .container {
+        width: 96%;
+        padding: 2%;
+        margin: 0;
+    }
+    
+    .navHeaderName {
+        font-size: 2em;
+    }
+    
+    .name {
+        margin-left: -4%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: rebeccapurple;
+        width: 100%;
+    }
+
+    .name {
+        padding-top: 3%;
+    }
+
+    .container {
+        width: 96%;
+        padding: 2%;
+    }
+    
+    .navHeaderName {
+        font-size: 1.75em;
+    }
+}
+
+/* Width at 576px and below */
+@media screen and (max-width: 576px) {
+    body {
+        background: orange;
+    }
+
+    .name {
+        padding-top: 4%;
+    }
+
+    .container {
+        width: 96%;
+        padding: 2%;
+    }
+
+    .nav {
+        width: 75px;
+    }
+    
+    .navHeaderName {
+        font-size: 22px;
+    }
+}
+    
