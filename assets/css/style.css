@@ -1,5 +1,5 @@
 html {
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +8,7 @@ body {
     background-image: url(../images/diagmonds.png);
     margin: 0;
     display: block;
-    min-height: 100%;
+    height: 100%;
     /* position: relative; */
     /* background-color: #4aaaa5; */
 }
@@ -56,7 +56,11 @@ a.navBar:hover {
 }
 
 .embee {
-    margin-bottom: 42px;
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
 }
 
 .topheader {
@@ -80,8 +84,8 @@ a.navBar:hover {
     float: left;
     color: #ffffff;
     background: #4aaaa5;
-    padding: 2% 0 2% 0;
-    width: 40%;
+    padding: 2%;
+    width: 30%;
 }
 
 .navwrap {
@@ -101,6 +105,11 @@ a.navBar:hover {
 /* .navHeaderName {
     font-
 } */
+
+.embee {
+    margin-bottom: 50px;
+    min-height: 100%;
+}
 
 .container {
     clear: both;
@@ -131,7 +140,7 @@ a.navBar:hover {
 .project {
     float: left;   
     margin: auto;
-    padding: 0% 2% 2% 0%;
+    padding: 0% 3% 3% 0%;
     height: 146px;
     width: 200px;    
 }
@@ -183,18 +192,23 @@ button {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.push {
+    height: 50px;
+}
+
 .footer {
     color: #ffffff;
-    /* position: fixed; */
-    padding: 16px 0px;
-    /* left: 0;
-    right: 0;
-    bottom: 0; */
+    height: 50px;
+    padding-top: 16px;
     background-color: #666666;
     width: 100%;
     margin: 0;
     overflow: hidden;
     border-top: 8px solid #4aaaa5;
+    /* position: fixed; */
+    /* left: 0;
+    right: 0;
+    bottom: 0; */
 }
 
 /* .center {
@@ -211,16 +225,17 @@ button {
 /* Width at 992px and below */
 @media screen and (max-width: 992px) {
     body {
-        background: red;
+        /* background: red; */
         width: 100%;
     }
 
     .topheader {
-        padding: 0 2%;
+        width: 100%;
+        /* padding: 0 2%; */
     }
 
     .topPanel, .form-input, .form {
-        width: 96%;
+        width: 98%;
     }
 
     .topPanel {
@@ -234,41 +249,36 @@ button {
     }
     
     .navHeaderName {
-        font-size: 2em;
-    }
-    
-    .name {
-        margin-left: -4%;
-    }
-    
+        font-size: 26px;
+    }    
 }
 
 @media screen and (max-width: 768px) {
     body {
-        background: rebeccapurple;
+        /* background: rebeccapurple; */
         width: 100%;
     }
 
     .name {
         padding-top: 3%;
+        width: 35%;
+    }
+
+    .navHeaderName {
+        font-size: 24px;
     }
 
     .container {
         width: 96%;
         padding: 2%;
     }
-    
-    .navHeaderName {
-        font-size: 1.75em;
-    }
 }
 
 /* Width at 576px and below */
 @media screen and (max-width: 576px) {
-    body {
-        background: orange;
+    .body {
+        width: 100%;
     }
-
     .name {
         padding-top: 4%;
     }
