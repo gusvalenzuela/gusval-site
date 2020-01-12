@@ -72,19 +72,12 @@ a.navBar:hover {
     /* margin-bottom: 10px; */
 }
 
-
 .topPanel {
     display: flex;
     width: 960px;
     margin: auto;
     justify-content: space-between;
     /* background: darkblue; */
-}
-
-@media screen and (max-width: 992px) {
-    .topPanel {
-        width: 100%;
-    }
 }
 
 .name {
@@ -141,8 +134,6 @@ a.navBar:hover {
     float: left;
     border: 2px white solid;
     margin-right: 15px;
-    height: 160px;
-    width: 220px;
 }
 
 .project {
