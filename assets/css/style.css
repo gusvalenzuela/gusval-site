@@ -204,10 +204,10 @@ button {
     margin: 0;
     overflow: hidden;
     border-top: 8px solid #4aaaa5;
-    /* position: fixed; */
-    /* left: 0;
+    position: fixed;
+    left: 0;
     right: 0;
-    bottom: 0; */
+    bottom: 0;
 }
 
 /* .center {
